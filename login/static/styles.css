@@ -1,0 +1,5 @@
+/* styles.css */
+.logo {
+    border-radius: 10%; /* Esto hace que los bordes de la imagen sean redondeados */
+    overflow: hidden; /* Esto asegura que la imagen redonda no se extienda más allá de sus bordes */
+}

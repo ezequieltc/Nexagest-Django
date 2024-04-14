@@ -1,0 +1,63 @@
+{% extends "baseMain.html"%}
+{% load static %}
+{% block title %}
+<title>Menu Principal</title>
+
+{% endblock %}
+{% block subtitle %}
+
+{% endblock %}
+
+{% block body %}
+
+<style>
+    table {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        font-family: "Roboto";
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    th,td{
+        padding: 60px;
+    }
+</style>
+
+
+<div>
+    <table style="text-align: center;">
+
+        <tr>
+            <td >
+                <button class="btn btn-outline-dark"><img src="{%static 'icons/ventas.png' %}" alt="imagen1"></button>
+                <p>Ventas</p>
+                
+            </td>
+            <td>
+                <button class="btn btn-outline-dark"><img src="{%static 'icons/compra2.png' %}" alt="imagen1"></button>
+                <p>Compras</p>
+            </td>
+            <td>
+                <button class="btn btn-outline-dark"><img src="{%static 'icons/inventario.png' %}" alt="imagen1"></button>
+                <p>Inventario</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn btn-outline-dark"><img src="{%static 'icons/metricas.png' %}" alt="imagen1"></button>
+                <p>Metricas</p>
+            </td>
+            <td>
+                <button class="btn btn-outline-dark"><img src="{%static 'icons/users.png' %}" alt="imagen1"></button>
+                <p>Users</p>
+            </td>
+            <td>
+                <button class="btn btn-outline-dark"><img src="{%static 'icons/ventas.png' %}" alt="imagen1"></button>
+                <p>Ventas</p>
+            </td>
+        </tr>
+</di>
+
+{% endblock %}
