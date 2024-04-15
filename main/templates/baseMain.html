@@ -28,12 +28,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <!-- <img src="{%static 'icons/userDesc.png' %}" width="40" height="40" class="mr-2"> -->
-                            Ezequiel Teruel
+                            {{request.user.first_name}} {{request.user.last_name}}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Prefencia</a></li>
-                          <li><a class="dropdown-item" href="#">Cambiar Usuario</a></li>
-                          <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                          <li><a class="dropdown-item" href="#">Preferencias</a></li>
+                          <li><a class="dropdown-item" href="{% url 'main:cerrarSesion' %}">Cerrar Sesión</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -19,7 +19,7 @@
         {%endif%}
     {% endfor %}
 {% endif %}
-<form action="{% url 'crearUsuario' %}" method="post">
+<form action="{% url 'login:crearUsuario' %}" method="post">
     {% csrf_token %}
     <div>
         <div class="form-group">
@@ -55,8 +55,16 @@
     setTimeout(function() {
         // Selecciona todos los elementos con la clase "alert" y los elimina
         var alerts = document.querySelectorAll('.alert');
+
         alerts.forEach(function(alert) {
-            alert.remove();
+            if(alert.classList.contains("alert-success")){
+                alert.remove();
+                window.location.href="{%url 'login:login' %}"
+            }
+            else{
+                alert.remove();
+            }
+
         });
     }, 3000); // 3000 milisegundos = 3 segundos
 </script>
